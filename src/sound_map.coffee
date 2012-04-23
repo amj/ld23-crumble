@@ -101,9 +101,9 @@ BufferLoader.prototype.load = function() {
 sm.SoundMap = SoundMap
 snd_ctx = new webkitAudioContext
 _map = {
-  fall: 'sound/fall.wav'
-  nooo: 'sound/nooo.wav'
-  hehe: 'sound/hehe.wav'
+  fall: 'sound/fall.mp3'
+  nooo: 'sound/nooo.mp3'
+  hehe: 'sound/hehe.mp3'
 }
 window.sounds = new SoundMap( snd_ctx, _map, (_sound_map) ->
         console.log 'loader callback!'
