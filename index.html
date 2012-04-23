@@ -1,0 +1,84 @@
+<head>
+  <!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/zepto/0.8/zepto.min.js"></script>
+  <script type="text/javascript" src="lib/gibdo.js"></script> !--> 
+
+  <title>LD 23: Tiny world</title> 
+
+  <style>
+  .centerbox {
+    /* flexbox, por favor */
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    width: 100%;
+    margin: 0; padding: 0;
+    text-align: center;
+    position: relative;
+  }
+  .hudpanel {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  body, html { width: 100%; height: 100%; padding: 0; margin: 0; font: 14px
+    'Helvetica Neue', 'Helvetica', sans-serif; text-align: center;}
+  canvas {
+    box-shadow: 0 0 15px #777;
+    width: 960px;
+    height: 704px;
+  }
+  dl {
+    text-decoration: bold;
+  }
+
+  body {
+    background-color: #998;
+  }
+  </style>
+
+</head>
+<body>
+    <br>
+    <h1>
+    <header align='center'>
+        The end of the sidewalk
+    </header>
+    </h1>
+    <br>
+
+
+    <div class='centerbox'>
+      <canvas></canvas>
+    </div>
+    <div class='hudpanel'>
+      <dl>
+        <dt>Timer</dt>
+        <dd id='timer'></dd>
+        <dt>Wave</dt>
+        <dd id='wave'></dd>
+        <dt>FPS</dt>
+        <dd id='fps'></dd>
+      </dl>
+    </div>
+    Use the mouse to herd your little blobs away from the snatchers!  Mind the edges...
+    Chrome only :(
+    <br/>A game made in 48 hours by <a href='http://skylineinnovations.com/'>Andrew Jackson</a>
+</body>
+
+
+<link href='http://fonts.googleapis.com/css?family=Mate+SC' rel='stylesheet' type='text/css'>
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="lib/atom.js"></script>
+<script src='lib/perlin.js'></script>
+<script src='lib/sound_map.js'></script>
+<script src="lib/ld23.js"></script> 
+
